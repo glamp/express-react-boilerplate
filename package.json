@@ -1,0 +1,22 @@
+{
+  "name": "power-rankings",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "concurrently \"yarn start:server\" \"yarn start:client\"",
+    "start:server": "nodemon server.js",
+    "start:client": "cd client && yarn start"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.18.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.1"
+  }
+}
